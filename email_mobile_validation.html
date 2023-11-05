@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>mobile validation</title>
+</head>
+<script type="text/javascript">
+function validate()
+{
+var phone=document.getElementById("pn");
+reg=/^[6-9]?([0-9]{9})$/;
+if(reg.test(phone.value))
+{
+alert("valid email & phonenumber");
+}
+else
+{
+alert("Invalid email & phonenumber");
+}
+
+}
+
+</script>
+
+<body bgcolor="grey">
+<form><center><br><br>
+Enter Email :<input id="uname" placeholder="enter email address" type="text" maxlength="50"/><br><br>
+Enter PhoneNumber :<input id="pn" placeholder="enter phone number" type="text" maxlength="10"/><br><br>
+<button onclick="validate()" type="submit">submit</button>
+</form></center>
+</body>
+</html>
